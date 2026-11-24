@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <button id="mybutton"> Pink</button>
+        <button id="mybutton1"> Blue</button>
+        <p id="messageText">  Waiting For Your Click </p>
+        <script>
+const button=document.getElementById("mybutton");
+const button1=document.getElementById("mybutton1");
+const textMessage=document.getElementById("messageText");
+const textMessage1=document.getElementById("messageText");
+function handleButtonClick(){
+    textMessage.textContent="Button was successfully clicked";
+    textMessage.style.color="pink";
+}
+function handleButtonClick1(){
+    textMessage1.textContent="Button was successfully clicked";
+    textMessage1.style.color="blue";
+}
+button.addEventListener("click",handleButtonClick);
+button1.addEventListener("click",handleButtonClick1);
+
+</script>
+</body>
+</html>

@@ -1,15 +1,16 @@
 <html>
-<head>
-    <script type="text/javascript">
-        function msg(){
-            alert("Hello Javapoint");
-        }
-        </script>
-        </head>
-        <body>
-            <p>Welcome to java script</p>
-            <form>
-                <input type="button" value="click" onclick="msg()"/>
-            </form>
-        </body>
-        </html>
+    <body>
+        <button id="mybutton"> Click </button>
+        <p id="messageText">  Waiting For Your Click </p>
+        <script>
+const button=document.getElementById("mybutton");
+const textMessage=document.getElementById("messageText");
+function handleButtonClick(){
+    textMessage.textContent="Button was successfully clicked";
+    textMessage.style.color="green";
+}
+button.addEventListener("click",handleButtonClick);
+
+</script>
+</body>
+</html>

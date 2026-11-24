@@ -1,0 +1,32 @@
+<html>
+    <body id="mybody">
+         <img   id="spiderman" src="spiderman.JPG" width="500" height="400" style="display:none; margin:auto;" >
+         <img   id="aj" src="car.webp" width="500" height="400" style="display:none; margin:auto;" >
+   
+        <button id="mybutton"> Click </button>
+        <p id="messageText">  Waiting For Your Click </p>
+        <script>
+const button=document.getElementById("mybutton");
+const textMessage=document.getElementById("messageText");
+const image=document.getElementById("spiderman");
+const image1=document.getElementById("aj")
+
+const body=document.getElementById("mybody");
+function handleButtonClick(){
+   textMessage.textContent="Spiderman Displayed";
+   image.style.display="block";
+   image1.style.display="block";
+   body.style.backgroundColor="red";
+}
+button.addEventListener("click",handleButtonClick);
+image.addEventListener("click",function(){
+   image.style.border="50px solid pink";
+}
+)
+image1.addEventListener("click",function(){
+   image1.style.border="50px solid pink";
+}
+)
+</script>
+</body>
+</html>

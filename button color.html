@@ -1,0 +1,18 @@
+<html>
+    <body id="mybody">
+       
+   
+        <button id="mybutton"> Click </button>
+        <p id="messageText">  Waiting For Your Click </p>
+        <script>
+const button=document.getElementById("mybutton");
+const textMessage=document.getElementById("messageText");
+const body=document.getElementById("mybody");
+function handleButtonClick(){
+   textMessage.textContent="Spiderman Displayed";
+   body.style.backgroundColor="lightblue";
+}
+button.addEventListener("click",handleButtonClick);
+</script>
+</body>
+</html>

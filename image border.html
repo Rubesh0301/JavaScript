@@ -1,0 +1,21 @@
+<html>
+<head>
+    <style>
+        .highlight-border{
+            border:5px solid #ff6700;
+            border-radius: 8px;
+        }
+        </style>
+</head>
+<body>
+    <img id="myimage" src="spiderman.JPG" height="200" width="200" alt="Sample Image">
+    <br>
+    <button id="borderBtn">Toggle</button>
+    <script>
+        const btn=document.getElementById("borderBtn");
+        const img=document.getElementById("myimage");
+        btn.addEventListener("click",function(){
+            img.classList.toggle("highlight-border");
+        });
+        </script>
+</body>

@@ -1,0 +1,12 @@
+<html>
+<body>
+    Enter your first name: <input type="text" id="firstname" onkeyup="mykeyupFunction()">
+    <P> My first name is: <span id="Test"></span></P>
+    <script>
+        function mykeyupFunction(){
+            var input=document.getElementById("firstname").value;
+            document.getElementById("Test").innerHTML=input;
+        }
+    </script>
+</body>
+</html>

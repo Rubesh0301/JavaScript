@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> Form </title>
+    </head>
+    <body>
+        <form id="userform">
+            <label>Name: <input type="text" id="name1"></label>
+        <br>
+        <br>
+        <label> Email id:<input type="email" id="name2"></label>
+    <br>
+    <br>
+    <label> Phone no:<input type="tel" id="mobile1"></label>
+</form>
+
+    </body>
+    <button id="mybutton"> Submit </button>
+    <p id="messageText"> Waiting for click</p>
+    <script>
+        const button=document.getElementById("mybutton");
+        const textMessage=document.getElementById("messageText");
+        function handleButtonClick(){
+            textMessage.textContent="Your form has been submitted";
+        }
+        button.addEventListener("click",handleButtonClick);
+        </script>
+</html>
